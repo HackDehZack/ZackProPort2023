@@ -1,0 +1,172 @@
+/* Define CSS variables */
+:root {
+  --main-color: #142f52;
+  --highlight-color: #00aaff;
+  --text-color: #000000;
+  --heading-color: #ffffff;
+}
+
+/* Apply styles to different sections and elements */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--highlight-color);
+  color: var(--heading-color);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--highlight-color);
+  padding: 10px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#about {
+  text-align: center;
+  background-color: var(--highlight-color);
+  padding: 40px;
+  color: var(--text-color);
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#work,
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--highlight-color);
+  padding: 40px;
+  color: var(--text-color);
+}
+
+#work h2,
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+#work p,
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#work .portfolio-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#work .portfolio-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+#projects,
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--highlight-color);
+  padding: 40px;
+  color: var(--text-color);
+}
+
+#projects h2,
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+}
+
+#projects p,
+#contact p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#projects .portfolio-item {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#projects .portfolio-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+#contact .contact-buttons {
+  margin-top: 30px;
+}
+
+#contact .contact-buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#contact .contact-buttons a:hover {
+  background-color: var(--highlight-color);
+}
+
+footer {
+  background-color: var(--main-color);
+  color: var(--heading-color);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Apply media queries for responsiveness */
+@media (max-width: 768px) {
+  #work {
+    flex-direction: column;
+  }
+
+  #work .portfolio-item {
+    width: 100%;
+  }
+}
+img {
+  text-align-last: left;
+  width: 500px;
+}
