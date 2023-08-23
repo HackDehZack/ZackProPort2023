@@ -1,3 +1,5 @@
+--- permalink: /Index.html ---
+
 # ZackProfessionalPortfolio2023
 This is for the Professional Portfolio assignment from module 2 of my boot camp.
 Portfolio Project README
